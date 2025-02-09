@@ -1,0 +1,131 @@
+/* Base Navbar */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    /* padding: 10px 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Navbar when scrolled */
+  .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    /* padding: 10px 25px; */
+  }
+  
+  /* Logo */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #2EC0BF;
+  }
+  
+  .nav-links a.active {
+    color: #2EC0BF;
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2EC0BF;
+  }
+  
+  /* Mobile Menu Toggle */
+  .menu-toggle {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Animate the toggle button when menu is open */
+  .menu-toggle.open {
+    transform: rotate(180deg);
+  }
+  
+  /* Mobile Menu */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .nav-links.open {
+      right: 0;
+    }
+  
+    .nav-links a {
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+    }
+  
+    .nav-links a:hover {
+      color: #2EC0BF;
+    }
+  
+    /* Prevent scrolling when menu is open */
+    body.menu-open {
+      overflow: hidden;
+    }
+  }
+  

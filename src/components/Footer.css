@@ -1,0 +1,9 @@
+.social-icon {
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #217474;
+    transform: scale(1.1);
+  }

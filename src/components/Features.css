@@ -1,0 +1,31 @@
+.features{
+    position: relative;
+    background-color:#afafaf64;
+    /* margin-bottom: 10px; */
+
+}
+
+.feature-card {
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 40px;
+    color: #2EC0BF;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .feature-card {
+      min-height: 200px;
+    }
+  }
+  
