@@ -6,8 +6,11 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "postinstall": "npm install",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -31,5 +34,6 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "vite": "^6.1.0"
-  }
+  },
+  "homepage": "./"
 }
