@@ -82,19 +82,19 @@ export default function Contact() {
                 <h5>Follow Us</h5>
                 <div className="social-icons">
                   <a href="https://www.instagram.com/gulf_flower_furnishings" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="social-icon" />
+                    <FaInstagram className="social-icon instagram" />
                   </a>
                   <a href="https://www.facebook.com/share/19qBanURkS" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook className="social-icon" />
+                    <FaFacebook className="social-icon facebook" />
                   </a>
                   <a href="http://www.youtube.com/@gulfflowerfurnishingsabudh585" target="_blank" rel="noopener noreferrer">
-                    <FaYoutube className="social-icon" />
+                    <FaYoutube className="social-icon youtube" />
                   </a>
                   <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="social-icon" />
+                    <FaLinkedin className="social-icon linkedin" />
                   </a>
                   <a href="https://wa.me/+9715592012487" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp className="social-icon" />
+                    <FaWhatsapp className="social-icon whatsapp" />
                   </a>
                 </div>
               </div>
