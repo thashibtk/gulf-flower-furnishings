@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "postinstall": "npm install",
+    "postinstall": "",
     "predeploy": "npm run build",
     "deploy": "netlify deploy --prod"
   },
